@@ -1,0 +1,301 @@
+@charset "UTF-8"; 
+@import 'reset.css'; 
+@font-face{
+    font-family: 'Cello';
+    src: url(../font/cello/RegularBoldCello-Bold.eot);
+    src: url(../font/cello/RegularBoldCello-Bold.woff)
+    }
+
+body {background-color: #e3f2fd;}
+#wrap {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/* /-------------------------------header-------------------------------*/
+
+#header {
+    width: 100%; 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    z-index: 10;
+}
+
+#header .inner{
+    width: 100%;
+    height:120px; 
+    position: relative;
+} 
+ 
+#header .inner h1  {
+    padding-top: 25px;
+    text-align:center;  
+}
+
+#header .inner .menuWeb{
+    margin-top:30px; 
+    background:rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    width:100%; 
+    height:40px; 
+} 
+
+#header .inner .menuWeb #gnb {
+    text-align:center;
+}
+
+#header .inner .menuWeb #gnb li{
+    display:inline-block; 
+}
+
+#header .inner .menuWeb #gnb li a{
+    display:block; 
+    padding:14px 40px; 
+    font:bold 14px/1 'arial'; 
+    color:#000000; 
+}
+
+#header .inner .menuWeb #gnb li a:hover{
+    background:#555; 
+    color:#fff; 
+}
+
+#header .inner .menuWeb #icon {
+    position: absolute;
+    top : 0px;
+    right:100px; 
+}
+
+#header .inner .menuWeb #icon li{
+    display:inline-block; 
+    background-position: center;
+}
+
+
+#header .inner .menuWeb #icon  :nth-child(1){
+    display:block; 
+    padding:20px 20px; 
+    background-image: url(../img/my.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#header .inner .menuWeb #icon  :nth-child(2){
+    display:block; 
+    padding:20px 20px; 
+    background-image: url(../img/bag.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#header .inner .menuWeb #icon  :nth-child(3){
+    display:block; 
+    padding:20px 20px; 
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+
+#header .inner .menuWeb #icon :hover:nth-child(1){
+    background:#555; 
+    background-image: url(../img/my_h.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header .inner .menuWeb #icon :hover:nth-child(2){
+    background:#555; 
+    background-image: url(../img/bag_h.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header .inner .menuWeb #icon :hover:nth-child(3){
+    background:#555; 
+    background-image: url(../img/search_h.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* /-------------------------------banner-------------------------------*/
+
+#visual {
+    width:100%; 
+    height:100vh; 
+    background-color: #525252;
+    background-image: url(../img/line_pattern.png);
+    background-repeat: repeat;
+    background-position: left top;
+    z-index: 2;
+    padding:140px 0; 
+    text-align:center; 
+    position:relative; 
+} 
+
+#visual video{
+    width:100%; 
+    height:100vh; 
+    object-fit:cover; 
+    opacity:0.6; 
+    position:absolute; 
+    top:0;
+    left:0; 
+    z-index:0; 
+}
+
+
+ #visual img {        
+    z-index: 3;
+    
+    position:relative; 
+}
+
+
+#visual #Language li {
+    display:inline-block; 
+}
+#visual #Language li {
+    display:block; 
+    padding:14px 40px; 
+    font:bold 14px/1 'arial'; 
+    color:#000000; 
+}
+
+/*/------------------------------------ opening-------------------------------------/ */
+#opening {
+    margin: 24px 0; 
+    background: url(img/opening.jpg) no-repeat center top; 
+    background-size: cover;
+}
+#opening {
+    padding: 100px 0; 
+    text-align: center; 
+    color: #bb9b51;
+}
+#opening h2 {
+    margin-bottom: 15px;
+}
+#opening h2 .grand {
+    background-position: 0 -175px; 
+    display: inline-block; 
+    width:330px; 
+    height: 50px;
+}
+#opening .date {
+    background-position: 0 -225px; 
+    display: inline-block; 
+    width:260px; 
+    height: 45px;
+}
+#opening .desc {
+    font-family: 'Cello';
+    color: #3e4b44;
+    font-size: 35px; 
+    font-weight: 300; 
+    padding-bottom: 20px; 
+}
+#opening .open_box {
+    overflow: hidden; 
+    padding: 20px 3% 0 3%;
+}
+#opening .open_box > div {
+    float: left; 
+    width: 27.333%; 
+    margin: 4% 3% 0 3%; 
+    box-sizing: border-box; 
+    background: rgba(0,0,0,0.5); 
+    border: 1px solid #3e4b44;
+}
+#opening .open_box > div h3 {
+    color:#fff; 
+    border: 1px solid #bb9b51;
+    margin-top: -24px; 
+    font-size: 19px; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background: #bb9b51;
+}
+#opening .open_box > div p {
+    font-size: 27px; color:#fff; 
+    font-weight: 300; 
+    padding: 6% 0 10% 0;
+}
+#opening .open_box > div em {
+    display: block; 
+}
+#opening .open_box > div strong {
+    display: block; 
+    font-weight: 700
+}
+/*/------------------------------------ footer-------------------------------------/ */
+#footer {
+    background: #211f1f;
+}
+.footer_infor {
+    padding: 50px 0; 
+    width: 80%;
+}
+.footer_infor h2 img {
+    width: 150px;
+}
+.footer_infor ul {
+    padding: 15px 0;
+}
+.footer_infor li {
+    position: relative; 
+    display: inline; 
+    padding-right: 16px; 
+    white-space: nowrap;
+}
+.footer_infor li:after {
+    content: ''; 
+    position: absolute; 
+    right: 5px; 
+    top: 5px; 
+    width: 1px; 
+    height: 11px; 
+    background: #8f8f8f;
+}
+.footer_infor li:last-child:after {
+    width: 0; 
+    height: 0;
+}
+.footer_infor li a {
+    color: #8f8f8f;
+}
+.footer_infor address p {
+    color: #8f8f8f; 
+    padding-bottom: 15px;
+}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1920px){
+    #wrap {width: 100%;}
+ 
+}
+
+/* 화면 너비 0 ~ 1179px */
+@media (max-width: 1179px){
+
+    #header .inner .menuWeb #gnb {
+        display: none;
+    }
+    
+    #header .inner .menuWeb #icon {
+        display: none;
+    }
+
+    #banner #visual video{
+        display: none;
+    }
+
+    #banner #visual img {
+        display: none;
+    }
+    
+    
+}

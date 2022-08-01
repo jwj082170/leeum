@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEEUM : join :양정민</title>
+<link rel="stylesheet" href="css/join.css">
+
+
+<div id="wrap">
+        <!-------------------------------- //header -------------------------------->
+<header id="header">
+    <div class="inner">
+        <h1>
+            <a href="index.html"><img src="img/leeumLogo.png" alt="leeumLogo"></a>
+        </h1>
+
+        <nav class="menuWeb">
+            <ul id="gnb">
+                <li><a href="department.html">PAINTER</a></li>
+                <li><a href="youtube.html">YOUTUBE</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+            </ul>
+
+            <ul id="icon">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>                      
+            </nav>
+
+    </div>
+</header>
+<!-------------------------------- //banner -------------------------------->
+   
+<figure id="visual">
+    <h1>JOIN <span>/회원가입</span></h1>
+    <img src="img/brand4.png" alt="LEEUM_img">    
+</figure>
+
+<!-------------------------------- //join -------------------------------->
+
+<body>
+   <section id="join">
+        <div class="inner">         
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="hidden">회원가입양식폼</legend>
+
+                    <h2><label for="terms">Terms & Policy</label> </h2>
+
+                    <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas, laboriosam eaque eius vitae quo optio aperiam facilis minus, assumenda fugit id, vel sed inventore ad earum. Atque expedita voluptatibus necessitatibus, a, quasi ipsum quia, culpa eligendi saepe accusantium ab earum rerum deserunt ad veniam optio incidunt ipsam. Voluptates harum rem ipsam, mollitia omnis illum at odio, debitis ab nobis, soluta tenetur qui dicta voluptatum! Odit nulla nobis numquam, nihil, beatae vitae tenetur, dolores esse dignissimos corrupti repellat! Sit molestiae commodi aliquid perferendis et dolor. Dolore facilis tempore obcaecati repudiandae laudantium vero dolores molestias quam nobis! Aut reprehenderit enim cumque.
+                    </textarea>
+
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다.</label>
+                    </div>
+
+                    <h2>MEMBER INFORMATION</h2>
+                    <table>
+                        <caption class="hidden">회원정보 입력양식테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="id">USER ID</label> </th>
+                            <td>
+                                <input type="text" id="id" name="id" placeholder="아이디 입력"  >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호 입력"  >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="pwd2">RE PASSWORD</label>
+                            </th>
+                            <td>
+                                <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호 재입력"  >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HOBBY</th>
+                            <td>
+                                <p class="hobbyTxt">취미를 하나이상 선택해 주세요.</p>
+                               <label for="game">
+                                    <input type="checkbox" name="hobby" id="game" value="game">
+                                    GAME
+                                </label> 
+                               <label for="music">
+                                 <input type="checkbox" name="hobby" id="music" value="music">
+                                 MUSIC
+                               </label>
+                               <label for="sports"> 
+                                     <input type="checkbox" name="hobby" id="sports" value="sports">
+                                SPORTS
+                               </label>
+                               <label for="reading">
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">
+                                READING
+                              </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">GENDER</th>
+                            <td>
+                                <p class="genderTxt">성별을 선택해 주세요.</p>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    MALE
+                                </label>
+                                <label for="female">
+                                   <input type="radio" name="gender" id="female" value="female">
+                                    FEMALE
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="email">E-MAIL</label>
+                            </th>
+                            <td>
+                                <input type="text" id="email" name="email" placeholder="이메일입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="edu">최종학력</label>
+                            </th>
+                            <td>
+                                <select name="edu" id="edu">
+                                    <option value="">최종학력 선택</option>
+                                    <option value="elementary">초등학교 졸업</option>
+                                    <option value="middle school">중학교 졸업</option>
+                                    <option value="high school">고등학교 졸업</option>
+                                    <option value="college">대학교 졸업</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="comments">COMMENTS</label>
+                            </th>
+                            <td>
+                                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트 입력"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </th>
+                        </tr>
+                    </table>
+
+                </fieldset>
+            </form>
+
+
+        </div>
+        <div class="sub_visual"></div>
+   </section>
+
+   <footer id="footer">
+    <div id="footer_infor">
+        <div class="container">
+            <div class="row">
+                <div class="footer_infor">
+                    <h2><img src="img/leeumLogo.png" alt="leeumLogo"></h2>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">제휴/광고/부대사업 문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                    </ul>
+                    <address>
+                        <p>서울특별시 용산구 이태원로55길 60-16 04348 <br>사업자등록번호 211-86-59478</span> 통신판매업신고번호 제 833호</p>
+                        <p>Copyright 2014 by MegaboxJoongAng Inc. All right reserved</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </footer>
+</body>
+</html>

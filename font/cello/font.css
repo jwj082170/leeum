@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'RegularBoldCello-Bold';
+  src: url('RegularBoldCello-Bold.eot');
+  src: url('RegularBoldCello-Bold.eot?#iefix') format('embedded-opentype'),
+       url('RegularBoldCello-Bold.svg#RegularBoldCello-Bold') format('svg'),
+       url('RegularBoldCello-Bold.ttf') format('truetype'),
+       url('RegularBoldCello-Bold.woff') format('woff'),
+       url('RegularBoldCello-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
